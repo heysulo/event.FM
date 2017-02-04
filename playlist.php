@@ -4,8 +4,10 @@ for ($i = 1; $i<27;$i++){
 ?>
 
 <div class="playlist_item">
+
     <div class="col-md-4">
         <div class="video_thumbnail"></div>
+
     </div>
     <div class="col-md-6">
         <div class="row">
@@ -13,6 +15,12 @@ for ($i = 1; $i<27;$i++){
         </div>
         <div class="row">
             <div class="video_requestor">Requested by Sulochana Kodituwakku</div>
+
+        </div>
+        <div class="row">
+            <div class="progressbar_main">
+                <div class="progressbar_value"></div>
+            </div>
         </div>
         <div class="row btn_voting" >
             <div class="btn-group" role="group" aria-label="Make your vote">

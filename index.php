@@ -9,9 +9,11 @@
 </head>
 <body class="defaultbackcolor">
 <div class="container">
+
     <div class="container minstylebar"></div>
     <div class="container welcomebanner" ></div>
     <div class="container main_container">
+        <div class="home_logo_area"></div>
         <p class="intro_title">Introduction</p>
         <p class="intro_txt">Spotify gives you instant access to millions of songs – from old favorites to the latest hits. Just hit play to stream anything you like.</p>
         <button type="button" class="loginbtn">Login with Facebook</button>

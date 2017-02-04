@@ -362,3 +362,74 @@
     text-align: right;
     padding: 0 25px 15px 25px;
 }
+
+.now_playing_bar{
+    height: 80px;
+    width: 100%;
+    background-color: #f50;
+    position: fixed;
+    bottom: -50px;
+    opacity: 0.9;
+    transition: all 0.2s linear;
+    transition-delay: 1s;
+}
+
+.now_playing_bar:hover{
+    opacity: 1;
+    bottom: 0px;
+
+    transition-delay: 0s;
+}
+
+.nowplaying_status{
+    font-size: 16px;
+    padding: 5px;
+    color: #fff;
+    background-color: #3079ed;
+}
+
+.nowplaying_buttons{
+
+}
+
+.nowplaying_action_row{
+    padding: 6px;
+    background-color: #fff;
+}
+
+.progressbar_main{
+    background-color: #42b72a;
+    width: 100%;
+    height: 3px;
+}
+
+.progressbar_value{
+    background-color: red;
+    width: 20%;
+    height: 3px;
+
+}
+
+.skip_vote_txt{
+    padding-top: 2px;
+    font-size: 12px;
+    color: #333;
+}
+
+.now_playing_bar_position{
+    background-color: #333;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    color: #fff;
+}
+
+.home_logo_area{
+    height: 100px;
+    width:480px;
+    background-image: url("../img/eventfm.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px 0 0 320px;
+    background-color: #fff;
+}

@@ -7,7 +7,7 @@
     ?>
     <title>iHack 2.0 / event.FM</title>
 </head>
-<body class="defaultbackcolor" style="margin-bottom: 120px;">
+<body class="defaultbackcolor" style="margin-bottom: 40px;">
 <div class="container">
     <div class="container minstylebar_marg"></div>
     <?php include_once("user_toppane.php") ?>
@@ -99,6 +99,8 @@
         <?php include("request_song.php");?>
     </div>
 </div>
+
+<?php include("now_playing.php");?>
 
 </body>
 </html>
