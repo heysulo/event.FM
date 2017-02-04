@@ -13,7 +13,12 @@
     <?php include_once("user_toppane.php") ?>
 </div>
 
+
 <div class="container event_banner">
+
+<div class="container event_banner"></div>
+<div class="container event_banner_overlay_txt">
+
     <div class="row">
         <div class="eventname">iHack 2.0</div>
     </div>
@@ -73,6 +78,7 @@
             </div>
         </div>
 
+
         <div class="col-xs-12 col-md-6">
             asdasdasd asdasd ads as
         </div>
@@ -104,6 +110,12 @@
                 <div class="online_user_name">Sulochana Kodituwakku</div>                              
             </div>
         </div>
+
+
+        <div class="col-xs-12 col-md-6" style="padding-top: 10px;">
+            <?php include_once ("playlist.php");?>
+        </div>
+        <div class="col-xs-12 col-md-3">asd asd asdad adad ad</div>
 
     </div>
 </div>

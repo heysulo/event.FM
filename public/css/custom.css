@@ -99,7 +99,38 @@
 
 .event_banner{
     height: 200px;
-    background-color: #c6c6c6;
+    background-image: url("../img/welcome_banner.jpg");
+    background-size: cover;
+    background-color: #333;
+
+
+}
+
+.event_banner_overlay {
+    margin-top: -200px;
+    opacity: 0.4;
+    background-color: #000;
+    height: 200px;
+}
+
+.event_banner_overlay_txt{
+    margin-top: -200px;
+    height: 200px;
+    background-image: linear-gradient( top,
+    rgba( 0, 0, 0, 0 ) 0%,
+    rgba( 0, 0, 0, 1 ) 100% );
+    background-image: -moz-linear-gradient( top,
+    rgba( 0, 0, 0, 0 ) 0%,
+    rgba( 0, 0, 0, 1 ) 100% );
+    background-image: -ms-linear-gradient( top,
+    rgba( 0, 0, 0, 0 ) 0%,
+    rgba( 0, 0, 0, 1 ) 100% );
+    background-image: -o-linear-gradient( top,
+    rgba( 0, 0, 0, 0 ) 0%,
+    rgba( 0, 0, 0, 1 ) 100% );
+    background-image: -webkit-linear-gradient( top,
+    rgba( 0, 0, 0, 0 ) 0%,
+    rgba( 0, 0, 0, 1 ) 100% );
 }
 
 .online_user_box{
@@ -183,13 +214,15 @@
     padding-top: 120px;
     padding-left: 15px;
     font-size: 32px;
+    color: #fff;
 }
 
 .txt_organizer{
     margin-top: -8px;
     padding-left: 15px;
     font-size: 12px;
-    color: #636363;
+    color: #999;
+
 }
 
 .shoutout{
@@ -235,4 +268,34 @@
     height: 120px;
     padding: 5px;
     border: 0px;
+}
+
+.playlist_item{
+    height: 120px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.playlist_item_position_title{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+    color : #999;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.playlist_item_position_number{
+    text-align: center;
+    text-transform: uppercase;
+    color : #333;
+    font-size: 64px;
+    margin-top: -10px;
+
+}
+
+
+.video_thumbnail{
+    
 }
