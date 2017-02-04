@@ -15,7 +15,7 @@
         <p class="intro_title">Introduction</p>
         <p class="intro_txt">Spotify gives you instant access to millions of songs – from old favorites to the latest hits. Just hit play to stream anything you like.</p>
         <button type="button" class="loginbtn">Login with Facebook</button>
-        <?php include_once ("footer.php")?>
+        <?php include_once ("footer.php");?>
     </div>
 </div>
 </body>
