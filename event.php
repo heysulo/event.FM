@@ -23,7 +23,9 @@
         <div class="txt_organizer">Organized by University of Colombo School of Computing ISACA Student Group</div>
     </div>
 </div>
+
 <div class="container event_container">
+
     <div class="row">
 
         <div class="col-xs-12 col-md-3 shoutoutbox">
@@ -79,6 +81,12 @@
         <div class="col-xs-12 col-md-6" style="padding-top: 10px;">
             <div class="row column_title">
                 Current Playlist
+            </div>
+            <div class="row action_buttons">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Request a Song</button>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> View My Requests</button>
+                </div>
             </div>
             <?php include_once ("playlist.php");?>
         </div>
