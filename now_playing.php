@@ -1,7 +1,12 @@
 <div class="now_playing_bar">
     <div class="container">
-        <div class="row nowplaying_status">
-            <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Now Playing : Bad Boyz (Feat. Bobby Biscayne, Austin Mahone & Pitbull)
+        <div class="row ">
+            <div class="col-lg-10 nowplaying_status">
+                <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Now Playing : Bad Boyz (Feat. Bobby Biscayne, Austin Mahone & Pitbull)
+            </div>
+            <div class="col-lg-2 now_playing_bar_position">
+                <span class="glyphicon glyphicon-cd" aria-hidden="true"></span> &nbsp;POSITION 99
+            </div>
         </div>
         <div class="row nowplaying_action_row" >
             <div class="col-md-5">
