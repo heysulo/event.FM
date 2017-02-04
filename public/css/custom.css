@@ -102,6 +102,37 @@
     background-color: #c6c6c6;
 }
 
+.online_user_box{
+    min-height: calc(100vh - 280px);
+    border-left: 1px solid #f2f2f2;
+    padding: 10px;
+}
+
+.online_user{
+    min-height: 35px;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.online_user_header{
+    color: #333;
+    font-size: 14px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+}
+
+.online_user_name{
+    margin-top: -26px;
+    margin-left: 43px;
+    font-size: 13px;
+}
+
+.online_user_propic{
+    height: 32px;
+    width: 32px;
+    background-color: red;
+}
 
 /*toppane*/
 .user_img_top{

@@ -11,9 +11,8 @@
 <div class="container">
     <div class="container minstylebar_marg"></div>
     <?php include_once("user_toppane.php") ?>
-
-
 </div>
+
 <div class="container event_banner">
     <div class="row">
         <div class="eventname">iHack 2.0</div>
@@ -22,9 +21,11 @@
         <div class="txt_organizer">Organized by University of Colombo School of Computing ISACA Student Group</div>
     </div>
 </div>
+
 <div class="container event_container">
     <div class="row">
         <div class="col-xs-12 col-md-3 shoutoutbox">
+
             <div class="shoutout">
                 <textarea class="shoutout_txt_input" maxlength="140" placeholder="Make a shoutout here ..."></textarea>
                 <div style="text-align: right;">
@@ -71,8 +72,39 @@
 
             </div>
         </div>
-        <div class="col-xs-12 col-md-6">asdasdasd asdasd ads as</div>
-        <div class="col-xs-12 col-md-3">asd asd asdad adad ad</div>
+
+        <div class="col-xs-12 col-md-6">
+            asdasdasd asdasd ads as
+        </div>
+
+        <div class="col-xs-12 col-md-3 online_user_box">
+            <div class="online_user_header">People Online Now</div>
+            <div class="online_user">                
+                <div class="online_user_propic"></div>
+                <div class="online_user_name">Sulochana Kodituwakku</div>                              
+            </div>
+            <div class="online_user">                
+                <div class="online_user_propic"></div>
+                <div class="online_user_name">Sulochana Kodituwakku</div>                               
+            </div>
+            <div class="online_user">                
+                <div class="online_user_propic"></div>
+                <div class="online_user_name">Sulochana Kodituwakku</div>                            
+            </div>
+            <div class="online_user">                
+                <div class="online_user_propic"></div>
+                <div class="online_user_name">Sulochana Kodituwakku</div>                              
+            </div>
+            <div class="online_user">                
+                <div class="online_user_propic"></div>
+                <div class="online_user_name">Sulochana Kodituwakku</div>                              
+            </div>
+            <div class="online_user">                
+                <div class="online_user_propic"></div>
+                <div class="online_user_name">Sulochana Kodituwakku</div>                              
+            </div>
+        </div>
+
     </div>
 </div>
 </body>
