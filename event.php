@@ -14,7 +14,6 @@
 </div>
 
 
-<div class="container event_banner">
 
 <div class="container event_banner"></div>
 <div class="container event_banner_overlay_txt">
@@ -83,52 +82,20 @@
         </div>
 
 
-        <div class="col-xs-12 col-md-6">
-            asdasdasd asdasd ads as
-        </div>
-
-        <div class="col-xs-12 col-md-3 online_user_box">
-            <div class="online_user_header">People Online Now</div>
-            <div class="online_user">                
-                <div class="online_user_propic"></div>
-                <div class="online_user_name">Sulochana Kodituwakku</div>                              
-            </div>
-            <div class="online_user">                
-                <div class="online_user_propic"></div>
-                <div class="online_user_name">Sulochana Kodituwakku</div>                               
-            </div>
-            <div class="online_user">                
-                <div class="online_user_propic"></div>
-                <div class="online_user_name">Sulochana Kodituwakku</div>                            
-            </div>
-            <div class="online_user">                
-                <div class="online_user_propic"></div>
-                <div class="online_user_name">Sulochana Kodituwakku</div>                              
-            </div>
-            <div class="online_user">                
-                <div class="online_user_propic"></div>
-                <div class="online_user_name">Sulochana Kodituwakku</div>                              
-            </div>
-            <div class="online_user">                
-                <div class="online_user_propic"></div>
-                <div class="online_user_name">Sulochana Kodituwakku</div>                              
-            </div>
-        </div>
-
-
         <div class="col-xs-12 col-md-6" style="padding-top: 10px;">
             <div class="row column_title">
                 Current Playlist
             </div>
             <div class="row action_buttons">
                 <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Request a Song</button>
+                    <button type="button" class="btn btn-success" style="background-color: #f50;border-color: #f50;"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Request a Song</button>
                     <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> View My Requests</button>
                 </div>
             </div>
             <?php include_once ("playlist.php");?>
         </div>
-        <div class="col-xs-12 col-md-3">asd asd asdad adad ad</div>
+
+        <?php include("online_users.php");?>
 
     </div>
 </div>
