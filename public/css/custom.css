@@ -165,6 +165,32 @@
     background-color: red;
 }
 
+/*request_song*/
+.song_detail{
+    width: 100%;
+    height: 105px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.song_thumbnail{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 180px;
+    height: 100px;
+    background-color: blue;
+    background-image: url(https://i.ytimg.com/vi/4fndeDfaWCg/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=d3cfQK9_fhznirnerPhag4IE6xI);
+}
+
+.song_title{
+    width: 380px;
+    height: 80px;
+    padding: 15px;
+    float: right;
+    margin-top: -80px;
+    font-weight: bold;
+}
+
 /*toppane*/
 .user_img_top{
     height:50px;

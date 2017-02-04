@@ -88,17 +88,17 @@
             </div>
             <div class="row action_buttons">
                 <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-success" style="background-color: #f50;border-color: #f50;"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Request a Song</button>
+                    <button type="button" class="btn btn-success" style="background-color: #f50;border-color: #f50;" data-toggle="modal" data-target="#basicModal"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Request a Song</button>
                     <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> View My Requests</button>
                 </div>
             </div>
             <?php include_once ("playlist.php");?>
         </div>
-
+        
         <?php include("online_users.php");?>
-
+        <?php include("request_song.php");?>
     </div>
 </div>
+
 </body>
 </html>
-Contact GitHub 
