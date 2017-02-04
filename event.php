@@ -7,7 +7,7 @@
     ?>
     <title>iHack 2.0 / event.FM</title>
 </head>
-<body class="defaultbackcolor">
+<body class="defaultbackcolor" style="margin-bottom: 120px;">
 <div class="container">
     <div class="container minstylebar_marg"></div>
     <?php include_once("user_toppane.php") ?>
@@ -29,8 +29,11 @@
 
 <div class="container event_container">
     <div class="row">
-        <div class="col-xs-12 col-md-3 shoutoutbox">
 
+        <div class="col-xs-12 col-md-3 shoutoutbox">
+            <div class="row column_title">
+                shout-out a message
+            </div>
             <div class="shoutout">
                 <textarea class="shoutout_txt_input" maxlength="140" placeholder="Make a shoutout here ..."></textarea>
                 <div style="text-align: right;">
@@ -113,6 +116,9 @@
 
 
         <div class="col-xs-12 col-md-6" style="padding-top: 10px;">
+            <div class="row column_title">
+                Current Playlist
+            </div>
             <?php include_once ("playlist.php");?>
         </div>
         <div class="col-xs-12 col-md-3">asd asd asdad adad ad</div>

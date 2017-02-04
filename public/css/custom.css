@@ -274,6 +274,7 @@
     height: 120px;
     width: 100%;
     border: 1px solid #ccc;
+    margin-bottom: 10px;
 }
 
 .playlist_item_position_title{
@@ -297,5 +298,35 @@
 
 
 .video_thumbnail{
-    
+    margin-top: 8px;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    background-image: url("https://i.ytimg.com/vi/6Qy42ya_PDg/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=noyMJFRl-z7lnMBCNp-6JXw9kas");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.video_title{
+    padding-top: 5px;
+    font-weight: bold;
+    color: #167ac6;
+}
+
+.video_requestor{
+    font-size: 10px;
+    color:#999;
+}
+
+.btn_voting{
+    bottom: -15px;
+    position:relative;
+}
+
+.column_title{
+    color: #f50;
+    font-size: 18px;
+    margin-left: 0px;
+    text-transform:uppercase;
+    padding: 5px;
 }
