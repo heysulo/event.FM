@@ -15,7 +15,6 @@ for ($i = 1; $i<27;$i++){
         </div>
         <div class="row">
             <div class="video_requestor">Requested by Sulochana Kodituwakku</div>
-
         </div>
         <div class="row">
             <div class="progressbar_main">
