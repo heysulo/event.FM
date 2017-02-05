@@ -7,4 +7,5 @@
 
 <link rel="stylesheet" type="text/css" href="<?php echo $publicPath?>css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $publicPath?>css/custom.css">
+<script src="https://code.jquery.com/jquery.js"></script>
 <script src="<?php echo $publicPath?>js/bootstrap.js"></script>
