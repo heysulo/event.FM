@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -10,6 +11,21 @@
                     <div class="input-group">
                         <span class="input-group-addon"><span class="glyphicon glyphicon-link"></span></span>
                         <input type="text" class="form-control" placeholder="Enter Link Here...">
+=======
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Request a Song</h4>
+                </div>
+                <div class="modal-body">
+                    Enter link : 
+                    <textarea class="form-control" rows="1" id="link"></textarea>
+                    <div class="song_detail">
+                        <div class="song_thumbnail"></div> 
+                        <div class="song_title">Backstreet Boys - I Want It That Way</div>
+>>>>>>> 0bff658fadad0c514e21a30597f88964dec97bc1
                     </div>
                 </div>
                 <div class="row">                   
@@ -25,4 +41,7 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 </div>
+=======
+>>>>>>> 0bff658fadad0c514e21a30597f88964dec97bc1
