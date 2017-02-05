@@ -2,7 +2,9 @@
     <div class="navbar-header">
         <img src="./public/img/eventfm.png" width="170px" height="35px" style="margin-top: 5px;margin-left: 10px;">
     </div>
-    <div class="nav navbar-nav" style="width: 100px;height: 50px;"></div>
+    <div class="nav navbar-nav" style="width: 100px;height: 50px;">
+
+    </div>
     <ul class="nav navbar-nav navbar-right">
         <li>
             <a style="padding-bottom: 5px">

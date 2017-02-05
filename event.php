@@ -27,6 +27,7 @@
 </div>
 
 <div class="container event_container">
+    <br>
 
     <div class="row">
 
