@@ -90,6 +90,11 @@
     min-height: calc(100vh - 280px);
 }
 
+.default_container{
+    background-color: white;
+    padding-bottom: 25px;
+}
+
 .shoutoutbox{
     min-height: calc(100vh - 280px);
     border-right: 1px solid #f2f2f2;
