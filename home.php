@@ -18,6 +18,7 @@
 <div class="container">
     <div class="container minstylebar_marg"></div>
     <?php include_once("user_toppane.php");
+    echo $userNode->getId()."<br><br>";
     print_r($userNode);
     ?>
 </div>
