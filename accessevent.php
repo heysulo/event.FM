@@ -32,7 +32,7 @@
         <div class="panel panel-default">
             <div class="panel-body ">
                 <span id="invlaidpass">
-                    <div class="alert alert-danger" role="alert">The Password you entered is Invalid. Please try again</div>
+                    <div class="alert alert-danger" role="alert"><b>The Password you entered is Invalid.</b> Try again</div>
                 </span>
                 <label for="basic-url">Enter Event Password</label>
                 <div class="input-group input-group-lg">
