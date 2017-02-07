@@ -78,7 +78,7 @@
         <li role="presentation"><a class="eventadministration_intactive_tab" href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
     </ul>
     <div class="row admin_tab_page">
-        <?php include("admintabs/shoutouts_adminview.php") ?>
+        <?php include("admintabs/settings.php") ?>
     </div>
 
 
