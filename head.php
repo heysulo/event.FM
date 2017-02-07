@@ -1,4 +1,6 @@
 <?php
+
+defined("event.fm_optimus") or die("CSI_HEAD");
 //define(A,true); this technique to prevent unauthorized access of file."
 ?>
 <meta charset="utf-8">
