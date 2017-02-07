@@ -72,10 +72,14 @@
 
     <br>
     <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Home</a></li>
-        <li role="presentation"><a class="eventadministration_intactive_tab" href="#">Profile</a></li>
-        <li role="presentation"><a class="eventadministration_intactive_tab" href="#">Messages</a></li>
+        <li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Playlist</a></li>
+        <li role="presentation"><a class="eventadministration_intactive_tab" href="#"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Song Requests <span class="badge" style="background-color: #f50;">69</span></a></li>
+        <li role="presentation"><a class="eventadministration_intactive_tab" href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Shout-outs <span class="badge" style="background-color: #f50;">21</span></a></li>
+        <li role="presentation"><a class="eventadministration_intactive_tab" href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
     </ul>
+    <div class="row admin_tab_page">
+        <?php include("admintabs/shoutouts_adminview.php") ?>
+    </div>
 
 
 </div>

@@ -444,6 +444,35 @@
     color: #f50;
 }
 
-.eventadministration_active_tab{
+.admin_tab_page{
+    border: 1px solid #dddddd;
+    border-top: 0px solid #dddddd;
+    margin: 0px;
+    padding: 10px;
+}
 
+.shoutout_profilepic_lg{
+    background-color: #333;
+    height: 100px;
+    width: 100px;
+    margin: 5px 0 0 -8px;
+}
+
+.shoutout_item{
+    height: 114px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.shoutout_timestamp{
+    margin-top: -2px;
+    font-size: 10px;
+    color:#90949c;
+}
+
+.shoutout_txt{
+    font-size: 14px;
+    line-height: 14px;
+    color: #555;
 }
