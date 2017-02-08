@@ -476,3 +476,60 @@
     line-height: 14px;
     color: #555;
 }
+
+.small_event_box_l1{
+    height: 100px;
+    margin:5px;
+    border : 1px solid #dddddd;
+    border-radius:4px;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+.small_event_box_l2{
+    height: 100px;
+    margin:5px;
+    margin-top: -105px;
+    border : 1px solid #dddddd;
+    border-radius:4px;
+    background-image: linear-gradient( top,
+    rgba( 0, 0, 0, 0.4 ) 0%,
+    rgba( 0, 0, 0, 0.8 ) 100% );
+    background-image: -moz-linear-gradient( top,
+    rgba( 0, 0, 0, 0.4 ) 0%,
+    rgba( 0, 0, 0, 0.8 ) 100% );
+    background-image: -ms-linear-gradient( top,
+    rgba( 0, 0, 0, 0.4 ) 0%,
+    rgba( 0, 0, 0, 0.8 ) 100% );
+    background-image: -o-linear-gradient( top,
+    rgba( 0, 0, 0, 0.4 ) 0%,
+    rgba( 0, 0, 0, 0.8 ) 100% );
+    background-image: -webkit-linear-gradient( top,
+    rgba( 0, 0, 0, 0.4 ) 0%,
+    rgba( 0, 0, 0, 0.8 ) 100% );
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+}
+
+.small_event_box_eventname{
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 15px 15px 25px ;
+    max-height:70px;
+    overflow:hidden;
+}
+
+.small_event_box_org{
+    color: #b5b5b5;
+    font-size: 12px;
+    line-height:12px;
+    margin: -5px 25px 25px 25px;
+    max-height:70px;
+    overflow:hidden;
+}
+
+.small_event_box_l2:hover{
+    background-color: #000;
+}

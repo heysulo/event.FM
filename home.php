@@ -24,27 +24,34 @@
 <div class="container default_container">
     <div class="row" style="padding: 20px">
         <div class="row page_title" >
-            Dashboard
+            Home
         </div>
+
         <p class="text-muted">Select an image to be displayed as the even banner. This image should be at least 1170px wide and 200px tall and should be in JPEG file format</p>
     </div>
     <div class="col-md-4">
         <div class="row column_title">
             Events You accessed
         </div>
+        <div class="row">
+            <?php include ("hometabs/participated.php");?>
+        </div>
     </div>
     <div class="col-md-4">
         <div class="row column_title">
-            events you adminstrate
-            <div style="text-align: right;">
-                <button type="button" class="btn btn-success" style="background-color: #f50;border-color: #f50;margin: 10px;" data-toggle="modal" data-target="#basicModal"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Create Event</button>
+            Your events
 
-            </div>
+        </div>
+        <div class="row">
+            <?php include ("hometabs/participated.php");?>
         </div>
     </div>
     <div class="col-md-4">
         <div class="row column_title">
             latest events
+        </div>
+        <div class="row">
+            <?php include ("hometabs/participated.php");?>
         </div>
     </div>
     
