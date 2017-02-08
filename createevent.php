@@ -1,21 +1,30 @@
+<?php define("event.fm_optimus", true);?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <?php
+    session_start();
     include_once("path.php");
     include_once("head.php");
+    if (isset($_SESSION['facebook_access_token'])==false) {
+        $_SESSION['rdr'] = $host."createevent.php";
+        header('Location: '.$host."index.php");
+    }
+    include_once("facebook.php");
     ?>
     <title>iHack 2.0 / event.FM</title>
 </head>
 <body class="defaultbackcolor" style="margin-bottom: 40px;">
 <div class="container">
     <div class="container minstylebar_marg"></div>
-    <?php include_once("user_toppane.php") ?>
+
+    <?php include_once("user_toppane.php"); ?>
 </div>
 <div class="container event_container">
     <div class="col-md-2"></div>
     <div class="col-md-8">
         <br>
+        <form action="test.php" method="post">
         <div class="row page_title">
             Create a New Event
         </div>
@@ -24,22 +33,22 @@
                 <label for="basic-url">Basic Event Information </label>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon3">Event Name</span>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" id="txt_eventname" name="event_name" required aria-describedby="basic-addon3">
                 </div>
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon3">Organizer Name</span>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" id="txt_organizer" name="organizer" required aria-describedby="basic-addon3">
                 </div>
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon3">Event Password</span>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" id="txt_password" name="password" required aria-describedby="basic-addon3">
                 </div>
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon3">Short Description</span>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" id="txt_description" name="description" required aria-describedby="basic-addon3">
                 </div>
                 <br>
                 <label for="basic-url">Select a Username for your event </label>
@@ -48,39 +57,40 @@
 
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon3">Event Username</span>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" id="txt_username" name="username" required aria-describedby="basic-addon3">
                 </div>
                 <br>
-                <div class="alert alert-success" role="alert">The Username you selecetd <b>ihack2</b> is available</div>
-                <div class="alert alert-danger" role="alert">The Username you selecetd <b>ihack2</b> is not available</div>
-                <div class="alert alert-danger" role="alert">The Username you entered is invalid. A username should contain <b>only alphanumeric</b> characters</div>
+                <div class="alert alert-success" style="display: none" id="un_alert_ok" role="alert">The Username you selecetd <b>ihack2</b> is available</div>
+                <div class="alert alert-danger" style="display: none" id="un_alert_unavailable" role="alert">The Username you selecetd <b>ihack2</b> is not available</div>
+                <div class="alert alert-danger" style="display: none" id="un_alert_invalid" role="alert">The Username you entered is invalid. A username should contain <b>only alphanumeric</b> characters</div>
                 <label for="basic-url">Select an Event Banner</label>
                 <p class="text-muted">Select an image to be displayed as the even banner. This image should be at least 1170px wide and 200px tall and should be in JPEG file format</p>
-                <input class="btn btn-default" type="file" value="Choose File">
+                <input class="btn btn-default" type="file" id="img_cover" required name="coverphoto" value="Choose File">
                 <br>
                 <label for="basic-url">Event.FM whitelist</label>
                 <p class="text-muted">Event.FM has a list of YouTube videos which are considered as safe and valid songs that can be played in an public event. If you enable this feature once a user requested one of the songs in the whitelist it will be approved without the acknowledgement of the event administrator(The person who creates the event) </p>
                 <div class="checkbox">
-                    <label><input type="checkbox" value=""> Use Event.FM whitelist</label>
+                    <label><input type="checkbox" name="chk_whitelist" id="chk_whitelist" value="chk_whitelist"> Use Event.FM whitelist</label>
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" value=""> Allow Explicit Metirial</label>
+                    <label><input type="checkbox" name="chk_explicit" id="chk_explicit" value="chk_explicit"> Allow Explicit Metirial</label>
                 </div>
-                <div class="alert alert-warning" role="alert"><b>Warning! Explicit Metirials are allowed. </b>This means if a user requested a song/video which contains explicit metirial and its in our whitelist that request willl be approved without the acknowledgement of the event administrator.</div>
+                <div class="alert alert-warning" style="display: none" id="alert_expl" role="alert"><b>Warning! Explicit Metirials are allowed. </b>This means if a user requested a song/video which contains explicit metirial and its in our whitelist that request willl be approved without the acknowledgement of the event administrator.</div>
                 <p class="text-primary">By clicking Create an Event, you agree to our Terms and confirm that you have read our Data Policy, including our Cookie Use Policy. </p>
 
             </div>
             <div class="panel-footer">
                 <div style="text-align: right;">
-                    <button type="button" class="btn btn-success">Create an Event</button>
+                    <button type="submit" class="btn btn-success">Create an Event</button>
                     <button type="button" class="btn btn-default">Cancel</button>
                 </div>
             </div>
         </div>
+        </form>
     </div>
     <div class="col-md-2"></div>
 
 </div>
-
+<script src="<?php echo $publicPath?>js/createevent.js"></script>
 </body>
 </html>

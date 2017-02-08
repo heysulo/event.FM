@@ -28,6 +28,12 @@
         </div>
 
         <p class="text-muted">Select an image to be displayed as the even banner. This image should be at least 1170px wide and 200px tall and should be in JPEG file format</p>
+        <div class="row pull-right" style="margin-right: 30px;">
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-lg btn-default gotheme_btn" onclick="location.href = 'createevent.php';">Create a New Event</button>
+                <button type="button" class="btn btn-lg btn-default">Search Event</button>
+            </div>
+        </div>
     </div>
     <div class="col-md-4">
         <div class="row column_title">
@@ -40,7 +46,6 @@
     <div class="col-md-4">
         <div class="row column_title">
             Your events
-
         </div>
         <div class="row">
             <?php include ("hometabs/participated.php");?>

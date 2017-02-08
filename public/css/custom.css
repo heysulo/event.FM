@@ -533,3 +533,9 @@
 .small_event_box_l2:hover{
     background-color: #000;
 }
+
+.gotheme_btn{
+    background-color: #f50 !important;
+    border-color: #f50 !important;
+    color: #fff !important;
+}
