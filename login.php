@@ -25,7 +25,7 @@ if (isset($accessToken)) {
     //$_SESSION['facebook_access_token'] = $accessToken;
     $fb->setDefaultAccessToken($accessToken);
     try {
-        $response = $fb->get('/me?fields=email,id,cover,name,first_name,last_name,age_range,link,gender,locale,picture,timezone,updated_time,verified');
+        $response = $fb->get('/me?fields=email,id,cover,name,first_name,last_name,middle_name,age_range,link,gender,locale,picture,timezone,updated_time,verified');
         $userNode = $response->getGraphUser();
     }catch(Facebook\Exceptions\FacebookResponseException $e) {
         // When Graph returns an error
