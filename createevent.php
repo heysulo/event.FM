@@ -24,7 +24,7 @@
     <div class="col-md-2"></div>
     <div class="col-md-8">
         <br>
-        <form action="requests/eventsubmit.php" method="post" id="mainform" onsubmit="return checksb();">
+        <form action="requests/eventsubmit.php" method="post" id="mainform" onsubmit="return checksb();" enctype="multipart/form-data" >
         <div class="row page_title">
             Create a New Event
         </div>
@@ -45,10 +45,11 @@
                     <span class="input-group-addon" id="basic-addon3">Event Password</span>
                     <input type="text" class="form-control" id="txt_password" name="password" required aria-describedby="basic-addon3" maxlength="32">
                 </div>
+                <p class="text-muted">Participants are required to enter this password when they access the event for the first time. Therefore you will have to share this password with the participants. Maximum password length 32 charcaters</p>
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon3">Short Description</span>
-                    <input type="text" class="form-control" id="txt_description" name="description" maxlength="120" required aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" id="txt_description" name="description" maxlength="240" required aria-describedby="basic-addon3">
                 </div>
                 <br>
                 <label for="basic-url">Select a Username for your event </label>
