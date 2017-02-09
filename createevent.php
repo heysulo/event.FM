@@ -24,7 +24,7 @@
     <div class="col-md-2"></div>
     <div class="col-md-8">
         <br>
-        <form action="test.php" method="post">
+        <form action="requests/eventsubmit.php" method="post" id="mainform" onsubmit="return checksb();">
         <div class="row page_title">
             Create a New Event
         </div>
@@ -43,21 +43,21 @@
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon3">Event Password</span>
-                    <input type="text" class="form-control" id="txt_password" name="password" required aria-describedby="basic-addon3" maxlength="120">
+                    <input type="text" class="form-control" id="txt_password" name="password" required aria-describedby="basic-addon3" maxlength="32">
                 </div>
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon3">Short Description</span>
-                    <input type="text" class="form-control" id="txt_description" name="description" required aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" id="txt_description" name="description" maxlength="120" required aria-describedby="basic-addon3">
                 </div>
                 <br>
                 <label for="basic-url">Select a Username for your event </label>
                 <p class="text-muted">You can only have one username for your event and you can't claim a username someone else is already using. Usernames can only contain alphanumeric characters (A-Z, 0-9) or a period (".").
-                    Periods (".") and capitalization don't count as a part of a username. For example, johnsmith55, John.Smith55 and john.smith.55 are all considered the same username. Usernames must be at least 5 characters long (12 characters max) and can't contain generic terms or extensions (ex: .com, .net).</p>
+                    Periods (".") and capitalization don't count as a part of a username. For example, johnsmith55, John.Smith55 and john.smith.55 are all considered the same username. Usernames must be at least 3 characters long (12 characters max) and can't contain generic terms or extensions (ex: .com, .net).</p>
 
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon3">Event Username</span>
-                    <input type="text" class="form-control" id="txt_username" name="username" maxlength="12" required aria-describedby="basic-addon3" pattern="(?=.{5,12}$)([a-zA-Z0-9]+[._]{0,1}[a-zA-Z0-9]+)+">
+                    <input type="text" class="form-control" id="txt_username" name="username" maxlength="12" required aria-describedby="basic-addon3">
                 </div>
                 <div class="row" style="display: none" id="div_checkingusername">
                     <br>
@@ -94,7 +94,7 @@
             </div>
             <div class="panel-footer">
                 <div style="text-align: right;">
-                    <button type="submit" class="btn btn-success">Create an Event</button>
+                    <button type="submit" id="btn_submit" class="btn btn-success">Create an Event</button>
                     <button type="button" class="btn btn-default">Cancel</button>
                 </div>
             </div>

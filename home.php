@@ -23,9 +23,21 @@
 </div>
 <div class="container default_container">
     <div class="row" style="padding: 20px">
+        <?php
+        if (isset($_SESSION['home_error'])){
+
+
+
+        ?>
+        <div class="alert alert-danger" role="alert"><?=$_SESSION['home_error'];?></div>
+        <?php
+            unset($_SESSION['home_error']);
+        }?>
+
         <div class="row page_title" >
             Home
         </div>
+
 
         <p class="text-muted">Select an image to be displayed as the even banner. This image should be at least 1170px wide and 200px tall and should be in JPEG file format</p>
         <div class="row pull-right" style="margin-right: 30px;">
