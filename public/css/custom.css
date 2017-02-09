@@ -445,10 +445,11 @@
 }
 
 .admin_tab_page{
-    border: 1px solid #dddddd;
-    border-top: 0px solid #dddddd;
+    border: 1px solid #ddd;
+    border-top: 2px solid #ddd;
     margin: 0px;
-    padding: 10px;
+    margin-top: -22px;
+    padding: 20px 10px 10px 10px;
 }
 
 .shoutout_profilepic_lg{
@@ -541,6 +542,9 @@
 }
 
 .loader {
+    position: absolute;
+    right: 0;
+    top: -6px;
     border: 5px solid #f3f3f3;
     border-radius: 50%;
     border-top: 5px solid #3498db;
@@ -560,6 +564,35 @@
     100% { transform: rotate(360deg); }
 }
 
-.success_box{
 
+.group_main_menu_item {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform:  uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 2px solid;
+    transition: all 0.3s linear;
+
+}
+
+.group_main_menu_item:hover {
+    border-bottom: 10px solid #f50;
+    color: #f50;
+}
+
+.group_main_menu_item_active{
+    border-bottom: 10px solid #4285F4;
+    color: #4285F4;
+}
+
+.group_main_menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height:70px;
 }

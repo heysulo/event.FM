@@ -73,18 +73,46 @@
 
 
     <br>
-    <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Playlist</a></li>
-        <li role="presentation"><a class="eventadministration_intactive_tab" href="#"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Song Requests <span class="badge" style="background-color: #f50;">69</span></a></li>
-        <li role="presentation"><a class="eventadministration_intactive_tab" href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Shout-outs <span class="badge" style="background-color: #f50;">21</span></a></li>
-        <li role="presentation"><a class="eventadministration_intactive_tab" href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
-    </ul>
+<!--    <ul class="nav nav-tabs">-->
+<!--        <li role="presentation" class="eventadministration_intactive_tab" data-toggle="tab"><a href="#tab_default_1"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Playlist</a></li>-->
+<!--        <li role="presentation"><a class="eventadministration_intactive_tab" href="#tab_default_2" data-toggle="tab"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Song Requests <span class="badge" style="background-color: #f50;">69</span></a></li>-->
+<!--        <li role="presentation"><a class="eventadministration_intactive_tab" href="#tab_default_3" data-toggle="tab"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Shout-outs <span class="badge" style="background-color: #f50;">21</span></a></li>-->
+<!--        <li role="presentation"><a class="eventadministration_intactive_tab" href="#" data-toggle="tab"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>-->
+<!--    </ul>-->
+    <div class="group_main_menu">
+        <ul>
+            <li class="group_main_menu_item group_main_menu_item_active" id="tab_1" onclick="tabswitch(1);"><span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> Playlist</li>
+            <li class="group_main_menu_item" id="tab_2" onclick="tabswitch(2);"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Song Requests <span class="badge" style="background-color: #f50;">69</span></li>
+            <li class="group_main_menu_item" id="tab_3" onclick="tabswitch(3);"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Shout-outs <span class="badge" style="background-color: #f50;">21</span></li>
+            <li class="group_main_menu_item" id="tab_4" onclick="tabswitch(4);"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</li>
+        </ul>
+    </div>
+
     <div class="row admin_tab_page">
-        <?php include("admintabs/settings.php") ?>
+        <div class="row" style="display: block" id="div_load">
+            <br>
+            <div class="col-md-3"></div>
+            <div class="col-md-1">
+                <div class="loader"></div>
+            </div>
+            <div class="col-md-5">
+                <label for="basic-url">Loading panel content from the server . . .</label>
+            </div>
+            <div class="col-md-3"></div>
+            <br>
+            <br>
+
+        </div>
+        <div id="tab_content_div">
+            
+        </div>
+
+
     </div>
 
 
 </div>
 
+<script src="<?php echo $publicPath?>js/event.js"></script>
 </body>
 </html>

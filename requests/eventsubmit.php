@@ -220,7 +220,7 @@ if ($conn->query($sql) === TRUE && $uploadOk==1) {
                     <p class="text-muted">Participants are required to enter this password when they access the event for the first time. Therefore you will have to share this password with the participants.</p>
                     <br>
                     <div style="text-align: center">
-                        <button type="button" class="btn btn-success btn-lg" style="width: 100%" onclick="location.href = '../event.php?id=<?=$username?>';">Continue to Event Administration</button>
+                        <button type="button" class="btn btn-success btn-lg" style="width: 100%" onclick="location.href = '../eventadministration.php?id=<?=$username?>';">Continue to Event Administration</button>
                         <br>
                         <br>
                         <p class="text-muted">
