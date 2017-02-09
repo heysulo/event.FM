@@ -90,8 +90,14 @@
                     <label><input type="checkbox" name="chk_explicit" id="chk_explicit" value="chk_explicit" disabled> Allow Explicit Metirial from whitelist</label>
                 </div>
                 <div class="alert alert-warning" style="display: none" id="alert_expl" role="alert"><b>Warning! Explicit Metirials are allowed. </b>This means if a user requested a song/video which contains explicit metirial and its in our whitelist that request willl be approved without the acknowledgement of the event administrator.</div>
+                <br>
+                <label for="basic-url">Publish Event</label>
+                <p class="text-muted">Event.FM has a list of YouTube videos which are considered as safe and valid songs that can be played in an public event. If you enable this feature once a user requested one of the songs in the whitelist it will be approved without the acknowledgement of the event administrator(The person who creates the event) </p>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="chk_publish" id="chk_publish" value="chk_publish"> Publish Event Now!</label>
+                </div>
+                <br>
                 <p class="text-primary">By clicking Create an Event, you agree to our Terms and confirm that you have read our Data Policy, including our Cookie Use Policy. </p>
-
             </div>
             <div class="panel-footer">
                 <div style="text-align: right;">

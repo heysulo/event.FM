@@ -1,9 +1,11 @@
+<?php define("event.fm_optimus", true);?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <?php
     include_once("path.php");
     include_once("head.php");
+    include_once("facebook.php");
     ?>
     <title>iHack 2.0 / event.FM</title>
 </head>
