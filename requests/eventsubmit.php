@@ -9,7 +9,7 @@ function redirect_main($reason){
     $host = $GLOBALS['host'];
     $_SESSION['home_error'] = $reason;
     echo $reason;
-    //header('Location: '.$host."home.php");
+    header('Location: '.$host."createevent.php");
     die();
 }
 
@@ -220,7 +220,7 @@ if ($conn->query($sql) === TRUE && $uploadOk==1) {
                     <p class="text-muted">Participants are required to enter this password when they access the event for the first time. Therefore you will have to share this password with the participants.</p>
                     <br>
                     <div style="text-align: center">
-                        <button type="button" class="btn btn-success btn-lg" style="width: 100%" onclick="location.href = '../eventadministration.php?id=<?=$username?>';">Continue to Event Administration</button>
+                        <button type="button" class="btn btn-success btn-lg" style="width: 100%" onclick="location.href = '../eventadministration.php?u=<?=$username?>';">Continue to Event Administration</button>
                         <br>
                         <br>
                         <p class="text-muted">
@@ -240,7 +240,7 @@ if ($conn->query($sql) === TRUE && $uploadOk==1) {
         <div class="col-md-2"></div>
 
     </div>
-
+    
     </body>
     </html>
 <?php

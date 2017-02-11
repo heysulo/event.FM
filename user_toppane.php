@@ -1,6 +1,6 @@
 <div class="row userbar">
     <div class="navbar-header">
-        <img src="<?=$publicPath?>/img/eventfm.png" width="170px" height="35px" style="margin-top: 5px;margin-left: 10px;">
+        <a href="<?=$host?>"> <img src="<?=$publicPath?>/img/eventfm.png" width="170px" height="35px" style="margin-top: 5px;margin-left: 10px;"></a>
     </div>
     <div class="nav navbar-nav" style="width: 100px;height: 50px;">
 

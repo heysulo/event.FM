@@ -5,29 +5,45 @@
     <?php
     include_once("path.php");
     include_once("head.php");
+    include_once("database/database.php");
     include_once("facebook.php");
+    $row = null;
+    if (isset($_GET['u'])){
+        $query = "SELECT * FROM event WHERE username=\"".mysqli_real_escape_string($conn,$_GET['u'])."\" and organizerID = ".$userNode->getId();
+        $result = mysqli_query($conn,$query);
+        if (mysqli_num_rows($result)==1){
+            $row = mysqli_fetch_assoc($result);
+        }else{
+            header("Location: notfound.php");
+            die();
+        }
+
+    }else{
+        header("Location: index.php");
+        die();
+    }
     ?>
-    <title>iHack 2.0 / event.FM</title>
+    <title><?=$row['eventname']?> / event.FM</title>
 </head>
 <body class="defaultbackcolor" style="margin-bottom: 40px;">
 <div class="container">
     <div class="container minstylebar_marg"></div>
     <?php include_once("user_toppane.php") ?>
 </div>
-<div class="container event_banner"></div>
+<div class="container event_banner" style="background-image: url('getimage.php?w=1170&h=a&f=<?php echo htmlspecialchars("public/banners/".$row['bannerimage']);?>');"></div>
 <div class="container event_banner_overlay_txt">
 
     <div class="row">
-        <div class="eventname">iHack 2.0</div>
+        <div class="eventname"><?=$row['eventname']?></div>
     </div>
     <div class="row">
-        <div class="txt_organizer">Organized by University of Colombo School of Computing ISACA Student Group</div>
+        <div class="txt_organizer">Organized by <?=$row['organizername']?></div>
     </div>
 </div>
 <div class="container default_container">
     <br>
     <div class="row page_title">
-        iHack 2.0 Event Administration
+        <?=$row['eventname']?> Event Administration
     </div>
     <p class="text-muted">You can manage your event from this page. Keep this page alive and connect your computer to the sound system. Closing or refreshing this tab will disturb the playing processs.</p>
     <br>
@@ -112,7 +128,11 @@
 
 
 </div>
+<script>
+    var everntun = "<?=$row['username']?>";
+</script>
 
 <script src="<?php echo $publicPath?>js/event.js"></script>
+<script src="<?php echo $publicPath?>js/createevent.js"></script>
 </body>
 </html>

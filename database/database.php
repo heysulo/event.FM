@@ -7,7 +7,8 @@
  */
 defined("event.fm_optimus") or die("CSI_DB");
 $conn = null;
-$dbhost = "ec2-54-202-222-202.us-west-2.compute.amazonaws.com";
+$dbhost = "heysulo.cuuyvrcrfrtk.us-east-1.rds.amazonaws.com";
+//$dbhost = "ec2-54-202-222-202.us-west-2.compute.amazonaws.com";
 $username = "sulochana";
 $password = "7ang0down";
 $database = "eventfm";

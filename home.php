@@ -7,7 +7,7 @@
     include_once("path.php");
     if (!isset($_SESSION['facebook_access_token'])) {
         $_SESSION['rdr'] = $_SERVER['HTTP_HOST']."/".$_SERVER['PHP_SELF'];
-        //header('Location: '.$host."login.php");
+        header('Location: '.$host."login.php");
     }
     include_once("head.php");
     include_once("facebook.php");

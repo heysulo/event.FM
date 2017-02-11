@@ -1,6 +1,9 @@
 /**
  * Created by sulochana on 2/9/17.
  */
+$(document).ready(function () {
+    tabswitch(1);
+})
 
 function tabswitch(tab) {
     var tab_1 = document.getElementById("tab_1");
@@ -12,6 +15,7 @@ function tabswitch(tab) {
     var handler;
 
     loader.style.display = "block";
+    //content.style.display = "none";
     switch (tab){
         case 1:
             tab_1.className = "group_main_menu_item group_main_menu_item_active";
@@ -51,10 +55,17 @@ function tabswitch(tab) {
     }
     $.post(handler,
         {
-            username: "test"
+            username: everntun
         },
         function(data, status){
             content.innerHTML = data;
             loader.style.display = "none";
+            content.style.display = "block";
+            jsajax =document.getElementById("js_ajax");
+            if (jsajax!=null){
+                console.log("evaluating JS_AJAX");
+
+                eval(jsajax.innerHTML);
+            }
         });
 }

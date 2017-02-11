@@ -21,8 +21,21 @@
     <?php include_once("user_toppane.php"); ?>
 </div>
 <div class="container event_container">
+    
     <div class="col-md-2"></div>
     <div class="col-md-8">
+        <div class="row">
+            <?php
+            if (isset($_SESSION['home_error'])){
+
+
+
+                ?>
+                <div class="alert alert-danger" role="alert" style="margin-top: 20px"><?=$_SESSION['home_error'];?></div>
+                <?php
+                unset($_SESSION['home_error']);
+            }?>
+        </div>
         <br>
         <form action="requests/eventsubmit.php" method="post" id="mainform" onsubmit="return checksb();" enctype="multipart/form-data" >
         <div class="row page_title">
