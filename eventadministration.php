@@ -128,11 +128,14 @@
 
 
 </div>
+
+<?php include("request_song.php");?>
 <script>
     var everntun = "<?=$row['username']?>";
 </script>
 
 <script src="<?php echo $publicPath?>js/event.js"></script>
+<script src="<?php echo $publicPath?>js/getvideoinfo.js"></script>
 <script src="<?php echo $publicPath?>js/createevent.js"></script>
 </body>
 </html>

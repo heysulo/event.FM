@@ -5,7 +5,6 @@
 <button type="button" class="btn btn-success" style="background-color: #f50;border-color: #f50;margin: 10px;" data-toggle="modal" data-target="#basicModal"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add a New Song to the Playlist</button>
 <?php
 $i = 0;
-include_once ("addnewsong.php");
 for ($i = 1; $i<27;$i++){
     ?>
     <div class="playlist_item">

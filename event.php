@@ -104,6 +104,7 @@
 </div>
 
 <?php include("now_playing.php");?>
+<script src="<?php echo $publicPath?>js/getvideoinfo.js"></script>
 
 </body>
 </html>

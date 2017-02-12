@@ -180,12 +180,17 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100px;
-    background-image: url(https://i.ytimg.com/vi/HUmPloOMNKc/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=hegKq_MlOd22JTuU9NDqjJt2o7k);
 }
 
 .song_title{
     font-weight: bold;
-    height: 70px;
+    margin-bottom: 0;
+}
+
+.song_description{
+    font-size: 10px;
+    line-height: 1.3em;
+    color: #767676;
 }
 
 /*toppane*/
